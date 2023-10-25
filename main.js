@@ -1,4 +1,4 @@
-alert('Hello word')function tocaSomPom(){
+function tocaSomPom(){
     document.querySelector('#som_tecla_pom').play();
 }
 
@@ -8,10 +8,4 @@ function tocaSomClap(){
     document.querySelector('#som_tecla_clap').play();
 }
 
-document.querySelector('.tecla.clap').onclick = tocaSomClap;
-
-function tocaSomTim(){
-    document.querySelector('#som_tecla_Tim').play();
-}
-
-document.querySelector('.tecla.Tim').onclick = tocaSomTim;
+document.querySelector('.tecla.clap').onclick = tocaSomClap
