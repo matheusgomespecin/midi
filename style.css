@@ -1,0 +1,126 @@
+/* Reset padrão para remoção de margens e preenchimentos */
+body, h1, button, section, audio {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Definir uma fonte personalizada para o cabeçalho */
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #00ff00; /* Sombra de texto */
+  }
+  
+  /* Estilizar o botão */
+  button {
+    background-color: #00ff00;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  button:hover {
+    background-color: #ff00ff; /* Efeito de hover */
+  }
+  
+  /* Estilizar a seção do teclado */
+  .teclado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Estilizar as teclas */
+  .tecla {
+    background-color: #000;
+    color: #00ff00;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tecla:hover {
+    background-color: #ff00ff; /* Efeito de hover */
+  }
+  
+  /* Estilizar os áudios (ocultar) */
+  audio {
+    display: none;
+  }
+  
+  /* Estilos animados para as teclas */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Aplicar animação nas teclas */
+  .tecla_pom, .tecla_clap, .tecla_tim, .tecla_puff, .tecla_splash, .tecla_toim, .tecla_psh, .tecla_tic, .tecla_tom {
+    animation: pulse 1s infinite;
+  }
+  
+  /* Cores neon para as teclas */
+  .tecla_pom {
+    background-color: #ff00ff;
+  }
+  
+  .tecla_clap {
+    background-color: #00ff00;
+  }
+  
+  .tecla_tim {
+    background-color: #00ffff;
+  }
+  
+  .tecla_puff {
+    background-color: #ff00ff;
+  }
+  
+  .tecla_splash {
+    background-color: #00ff00;
+  }
+  
+  .tecla_toim {
+    background-color: #00ffff;
+  }
+  
+  .tecla_psh {
+    background-color: #ff00ff;
+  }
+  
+  .tecla_tic {
+    background-color: #00ff00;
+  }
+  
+  .tecla_tom {
+    background-color: #00ffff;
+  }
+  
